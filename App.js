@@ -52,17 +52,27 @@ export default class App extends Component{
   render(){
     return( 
     <View style = {{flex : 1,backgroundColor : "#1C1C1C" , paddingBottom : 10}}>
-       <View style={{flex : 1 , justifyContent: "center"}}>
+       <View style={{flex : 2 , justifyContent: "center"}}>
            <Text style={{fontSize: 50 , color : "white", textAlign : "right", paddingRight:5 , paddingBottom : 10, paddingTop: 170}}>
                {this.state.expression}
            </Text>
        </View>
-       <View style={{flex : 2, flexDirection : "row"}}>
+       <View style={{flex : 3, flexDirection : "row"}}>
             <View style = {{flex : 3}}>
                   <View style = {{flex : 1,flexDirection : "row"}}>
                         <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton} name = "AC"  />
                         <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = "(" />
                         <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = ")" />
+                  </View>
+                  <View style = {{flex : 1,flexDirection : "row"}}>
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton} name = "<"  />
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = ">" />
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = "!" />
+                  </View>
+                   <View style = {{flex : 1,flexDirection : "row"}}>
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton} name = "&&"  />
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = "||" />
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = "^" />
                   </View>
                   <View  style= {{flex : 3}}>
                      <View style = {{flex : 1, flexDirection : "row"}}>
