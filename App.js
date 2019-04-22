@@ -53,7 +53,7 @@ export default class App extends Component{
     return( 
     <View style = {{flex : 1,backgroundColor : "#1C1C1C" , paddingBottom : 10}}>
        <View style={{flex : 1 , justifyContent: "center"}}>
-           <Text style={{fontSize: 70 , color : "white", textAlign : "right", paddingRight:5 , paddingBottom : 10, paddingTop: 170}}>
+           <Text style={{fontSize: 50 , color : "white", textAlign : "right", paddingRight:5 , paddingBottom : 10, paddingTop: 170}}>
                {this.state.expression}
            </Text>
        </View>
@@ -61,8 +61,8 @@ export default class App extends Component{
             <View style = {{flex : 3}}>
                   <View style = {{flex : 1,flexDirection : "row"}}>
                         <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton} name = "AC"  />
-                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = "+/-" />
-                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = "%" />
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = "(" />
+                        <CalculatorButton pressed = {this.pressed} s ={styles.lightGrayButton}name = ")" />
                   </View>
                   <View  style= {{flex : 3}}>
                      <View style = {{flex : 1, flexDirection : "row"}}>
